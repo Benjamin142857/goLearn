@@ -31,10 +31,6 @@ func add(init int) func(int) int {
 	}
 }
 
-func f1(x int) int {
-	return 30
-}
-
 func main() {
 	//f1 := f2(f1)
 	//fmt.Println(f1(3, 5))

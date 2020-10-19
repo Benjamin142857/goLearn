@@ -1,0 +1,16 @@
+benjamin142857@Benjamins-MacBook-Air goLearn % git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+benjamin142857@Benjamins-MacBook-Air goLearn % git push origin master
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (20/20), 2.55 KiB | 869.00 KiB/s, done.
+Total 20 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Benjamin142857/goLearn.git
+   db7c4a0..d1e840f  master -> master

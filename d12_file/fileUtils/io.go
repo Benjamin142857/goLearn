@@ -135,15 +135,6 @@ func WriteByBufIO(fileName string, content string) (err error) {
 	// 4. write to file
 	err = pWriter.Flush()
 
-	// 3. write to cache
-	_, err = pWriter.WriteString(content)
-	if err != nil {
-		return
-	}
-
-	// 4. write to file
-	err = pWriter.Flush()
-
 	return
 }
 
@@ -151,8 +142,4 @@ func WriteByBufIO(fileName string, content string) (err error) {
 func WriteByIOUtil(fileName string, content string) (err error) {
 	err = ioutil.WriteFile(fileName, []byte(content), 0666)
 	return
-}
-
-func test() {
-	os.Stdin
 }

@@ -14,6 +14,7 @@ func f1(x, y int) int {
 	fmt.Println("do something")
 	return x + y
 }
+
 func f2(fn func(int, int) int) func(int, int) int {
 	return func(x, y int) int {
 		fmt.Println("start")

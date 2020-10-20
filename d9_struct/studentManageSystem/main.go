@@ -1,6 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"strings"
+)
 
 /*
 	学生管理系统 1.0
@@ -70,26 +76,39 @@ func newStudent(idHWM *int, name string, age int) (std *Student) {
 // 标准输入捕获 int
 func inputInt(input *int, text string) {
 	for {
+		pReader := bufio.NewReader(os.Stdin)
+
 		fmt.Printf("\n%v", text)
-		_, err := fmt.Scanf("%d", input)
-		if err == nil {
-			break
-		} else {
+		inputText, err := pReader.ReadString('\n')
+		if err != nil {
 			fmt.Println("无效输入, 请重新按要求输入...")
+			continue
 		}
+
+		*input, err = strconv.Atoi(strings.Trim(inputText, "\n"))
+		if err != nil {
+			fmt.Println("无效输入, 请重新按要求输入...")
+			continue
+		}
+
+		break
 	}
 }
 
 // 标准输入捕获 str
 func inputStr(input *string, text string) {
 	for {
+		pReader := bufio.NewReader(os.Stdin)
+
 		fmt.Printf("\n%v", text)
-		_, err := fmt.Scanf("%s", input)
-		if err == nil {
-			break
-		} else {
+		inputText, err := pReader.ReadString('\n')
+		if err != nil {
 			fmt.Println("无效输入, 请重新按要求输入...")
+			continue
 		}
+
+		*input = strings.Trim(inputText, "\n")
+		break
 	}
 }
 

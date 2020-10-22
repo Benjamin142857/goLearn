@@ -67,13 +67,63 @@ func test5() {
 func test6() {
 	today := time.Now()
 	tomorrow := today.Add(time.Hour * 24)
-	yesterday := today.Sub(time.Hour * 24)
+	yesterday := today.Add(-time.Hour * 24)
 
 	fmt.Println(today)
 	fmt.Println(tomorrow)
 	fmt.Println(yesterday)
 }
 
+func test7() {
+	today := time.Now()
+	tomorrow := today.Add(time.Hour * 24)
+	err := tomorrow.Sub(today)
+	fmt.Printf("%T, %v\n", err, err)
+}
+
+func test8() {
+	now1 := time.Now()
+	time.Sleep(100)
+	now2 := time.Now()
+
+	now3 := now1
+	fmt.Println(now2)
+	fmt.Printf("%p\n%p\n", &now1, &now3)
+
+	fmt.Println(now1.Equal(now2))
+	fmt.Println(now1.Equal(now3))
+
+}
+
+func test9() {
+	today := time.Now()
+	tomorrow := today.Add(time.Hour * 24)
+	yesterday := today.Add(-time.Hour * 24)
+
+	fmt.Println(today.Before(yesterday))
+	fmt.Println(today.Before(tomorrow))
+
+	fmt.Println(today.After(yesterday))
+	fmt.Println(today.After(tomorrow))
+}
+
+func test10() {
+	fmt.Println(time.Now().Format("15:04:05"))
+	time.Sleep(5 * time.Second)
+	fmt.Println(time.Now().Format("15:04:05"))
+}
+
+func test11() {
+	now := time.Now().Add(10 * time.Second)
+	for t := range time.Tick(time.Second) {
+		fmt.Println(t.Format("15:04:05"))
+
+		if t.After(now) {
+			break
+		}
+	}
+}
+
 func main() {
-	test6()
+	test11()
 }

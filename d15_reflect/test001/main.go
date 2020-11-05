@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"reflect"
 )
@@ -136,6 +137,22 @@ func getStructFieldInfo(i interface{}) (fieldSlice []myField) {
 			tag:     string(fieldObj.Tag),
 		})
 	}
+	return
+}
+
+func test010(x interface{}) (err error) {
+	pTypeObj := reflect.TypeOf(x)
+	if pTypeObj.Kind() != reflect.Ptr {
+		err = errors.New("x not a ptr")
+		return
+	}
+
+	vTypeObj := pTypeObj.Elem()
+	if vTypeObj.Kind() != reflect.Struct {
+		err = errors.New("*x not a struct")
+		return
+	}
+
 	return
 }
 

@@ -115,7 +115,8 @@ func test10() {
 
 func test11() {
 	now := time.Now().Add(10 * time.Second)
-	for t := range time.Tick(time.Second) {
+	chTick := time.NewTicker(time.Second)
+	for t := range chTick.C {
 		fmt.Println(t.Format("15:04:05"))
 
 		if t.After(now) {

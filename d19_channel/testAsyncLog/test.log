@@ -1,0 +1,37 @@
+[2020-12-02 11:17:56|INFO|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个info
+[2020-12-02 11:17:57|INFO|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个info
+[2020-12-02 11:17:57|INFO|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个info
+[2020-12-02 11:17:58|DEBUG|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个debug
+[2020-12-02 11:17:58|DEBUG|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈 这是 个warn
+[2020-12-02 11:17:59|ERROR|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈 这是 个error 
+[2020-12-02 11:18:19|INFO|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个info
+[2020-12-02 11:18:20|INFO|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个info
+[2020-12-02 11:18:20|INFO|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个info
+[2020-12-02 11:18:21|DEBUG|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈这是个debug
+[2020-12-02 11:18:21|DEBUG|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈 这是 个warn
+[2020-12-02 11:18:22|ERROR|asm_amd64.s:1374 runtime.goexit] 哈哈哈哈 这是 个error 
+[2020-12-02 11:20:28|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:20:30|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:20:31|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:20:33|DEBUG|:0 ] 哈哈哈哈这是个debug
+[2020-12-02 11:20:34|DEBUG|:0 ] 哈哈哈哈 这是 个warn
+[2020-12-02 11:20:36|ERROR|:0 ] 哈哈哈哈 这是 个error 
+[2020-12-02 11:21:29|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:21:36|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:21:38|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:21:39|INFO|:0 ] 哈哈哈哈这是个info
+[2020-12-02 11:21:41|DEBUG|:0 ] 哈哈哈哈这是个debug
+[2020-12-02 11:21:42|DEBUG|:0 ] 哈哈哈哈 这是 个warn
+[2020-12-02 11:21:44|ERROR|:0 ] 哈哈哈哈 这是 个error 
+[2020-12-02 11:21:58|INFO|log.go:88 goLearn/d19_channel/bjmLogAsync.(*Logger).Run] 哈哈哈哈这是个info
+[2020-12-02 11:21:59|INFO|log.go:88 goLearn/d19_channel/bjmLogAsync.(*Logger).Run] 哈哈哈哈这是个info
+[2020-12-02 11:22:01|INFO|log.go:88 goLearn/d19_channel/bjmLogAsync.(*Logger).Run] 哈哈哈哈这是个info
+[2020-12-02 11:22:02|DEBUG|log.go:88 goLearn/d19_channel/bjmLogAsync.(*Logger).Run] 哈哈哈哈这是个debug
+[2020-12-02 11:22:04|DEBUG|log.go:88 goLearn/d19_channel/bjmLogAsync.(*Logger).Run] 哈哈哈哈 这是 个warn
+[2020-12-02 11:22:05|ERROR|log.go:88 goLearn/d19_channel/bjmLogAsync.(*Logger).Run] 哈哈哈哈 这是 个error 
+[2020-12-02 11:26:51|INFO|main.go:19 main.test1] 哈哈哈哈这是个info
+[2020-12-02 11:26:53|INFO|main.go:23 main.test1] 哈哈哈哈这是个info
+[2020-12-02 11:26:54|INFO|main.go:27 main.test1] 哈哈哈哈这是个info
+[2020-12-02 11:26:56|DEBUG|main.go:31 main.test1] 哈哈哈哈这是个debug
+[2020-12-02 11:26:57|DEBUG|main.go:35 main.test1] 哈哈哈哈 这是 个warn
+[2020-12-02 11:26:59|ERROR|main.go:39 main.test1] 哈哈哈哈 这是 个error 

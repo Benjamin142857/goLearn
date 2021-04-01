@@ -22,13 +22,15 @@ func f2(ctx context.Context) {
 }
 
 func main() {
+	ctx1 := context.Background()
+	ctx2, _ := context.WithCancel(ctx1)
+	ctx3 := context.WithValue(ctx2, "main", "benjamin")
 
-	ctx, cancel := context.WithCancel(context.Background())
-	ctx = context.WithValue(ctx, "main", "benjamin")
-	wg.Add(1)
-	go f1(ctx)
+	fmt.Printf("ctx1: %v, %p\n", ctx1, ctx1)
+	fmt.Printf("ctx2: %v, %p\n", ctx2, ctx2)
+	fmt.Printf("ctx3: %v, %p\n", ctx3, ctx3)
 
-	fmt.Printf("main: %p\n", ctx.Done())
-	cancel()
-	wg.Wait()
+	fmt.Println(ctx1.Value("main"))
+	fmt.Println(ctx2.Value("main"))
+	fmt.Println(ctx3.Value("main"))
 }

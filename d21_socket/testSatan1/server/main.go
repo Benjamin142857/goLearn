@@ -69,7 +69,8 @@ func main() {
 	)
 	listen, err := net.Listen("tcp", url+":"+port)
 	if err != nil {
-		fmt.Println("net.Listen failed: ", err)
+		fmt.Println("net."+
+			"Listen failed: ", err)
 		return
 	}
 	defer func() { _ = listen.Close() }()

@@ -14,6 +14,8 @@ const (
 	gold
 )
 
+type SatanString string
+
 type Dog struct {
 	Name  string `json:"name"`
 	Color Color  `json:"color"`
@@ -37,8 +39,9 @@ func encode(i interface{}) string {
 
 func main() {
 	p1 := &Person{
-		Name:  "Benjamin",
-		Age:   22,
+		Name: "Benjamin",
+		Age:  22,
+
 		Hobby: []string{"coding", "loving"},
 		Dog:   Dog{Name: "wangwang", Color: gold},
 	}
@@ -50,6 +53,7 @@ func main() {
 	}
 
 	res := make([]*Person, 0)
+	fmt.Println(encode([]*Person{p1, p2}))
 
 	err := json.Unmarshal([]byte(encode([]*Person{p1, p2})), &res)
 	if err != nil {
